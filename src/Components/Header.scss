@@ -1,0 +1,81 @@
+.header-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure the header is on top of the sidebar */
+  box-shadow: none; /* Remove any shadow */
+
+  .btn-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+
+    button {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.2em;
+      cursor: pointer;
+      margin-right: 20px;
+      margin-left: 195px;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+
+    h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+      font-family: "space grotesk", sans-serif;
+      color: #fff;
+      .highlight-color{
+        color: #7e7a7a;
+      }
+    }
+  }
+
+  .btn-search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 600px;
+
+    input {
+      padding: 5px 10px;
+      background-color: none;
+      font-size: 1em;
+      background-color: transparent;  
+      border-bottom: 3px solid black white;                  
+      cursor: pointer;               
+      border-radius: 5px;            
+    
+      &:hover {
+        color: #d4d4d4;              
+      }
+    
+      &:focus {
+        outline: none;               
+      }
+    }
+
+    .btn-icon {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.2em;
+      cursor: pointer;
+
+      &:hover {
+        color: #ccc;
+      }
+    }
+  }
+}
